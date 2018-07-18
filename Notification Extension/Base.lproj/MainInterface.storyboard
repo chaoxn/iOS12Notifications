@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="Notification_Extension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eWI-Ki-o0E">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rl-iS-i8x">
+                                <rect key="frame" x="252" y="10" width="58" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="看看西瓜">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="coverButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="zGO-4s-fZc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍉🍉🍉🍉🍉🍉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9L-Gk-mXc">
+                                <rect key="frame" x="61" y="67.5" width="198" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83082605330000003" green="1" blue="0.74895210869999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eWI-Ki-o0E" firstAttribute="centerX" secondItem="39q-ae-omn" secondAttribute="centerX" id="1PP-z2-1ob"/>
+                            <constraint firstItem="eWI-Ki-o0E" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" id="AH2-if-xsd"/>
+                            <constraint firstItem="39q-ae-omn" firstAttribute="trailing" secondItem="3rl-iS-i8x" secondAttribute="trailing" constant="10" id="EUs-rY-ORP"/>
+                            <constraint firstItem="eWI-Ki-o0E" firstAttribute="top" secondItem="39q-ae-omn" secondAttribute="top" id="YLC-7v-Adt"/>
+                            <constraint firstItem="O9L-Gk-mXc" firstAttribute="centerY" secondItem="eWI-Ki-o0E" secondAttribute="centerY" constant="-15" id="eCl-No-Cf2"/>
+                            <constraint firstItem="3rl-iS-i8x" firstAttribute="top" secondItem="39q-ae-omn" secondAttribute="top" constant="10" id="i6T-iY-heN"/>
+                            <constraint firstItem="eWI-Ki-o0E" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="tJl-U1-Soi"/>
+                            <constraint firstItem="O9L-Gk-mXc" firstAttribute="centerX" secondItem="eWI-Ki-o0E" secondAttribute="centerX" id="ucA-kc-mDB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="39q-ae-omn"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="button" destination="3rl-iS-i8x" id="WoP-Nc-FxN"/>
+                        <outlet property="imageView" destination="eWI-Ki-o0E" id="Ef9-i3-MUY"/>
+                        <outlet property="waterMelonLabel" destination="O9L-Gk-mXc" id="lSU-tl-YxK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="33.283358320839582"/>
+        </scene>
+    </scenes>
+</document>
